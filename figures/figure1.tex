@@ -1,0 +1,48 @@
+\documentclass[varwidth=\maxdimen]{standalone}
+\usepackage{listings}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\lstset{
+  aboveskip=0,
+  boxpos=t,
+  inputencoding=utf8,
+  extendedchars=true,
+  literate=%
+    {'}{{\textquotesingle}}1
+    {«}{{\guillemotleft}}1
+    {»}{{\guillemotright}}1
+}
+\begin{document}
+  \begin{tabular}[t]{ @{}|l|l| }
+    \multicolumn{1}{c|}{Figure 1A} & \multicolumn{1}{|c}{Figure 1B} \\
+    \hline
+    \begin{lstlisting}
+'''
+« Node Block documentation »
+
+Node Block:
+{"name": string,
+ "config": list of strings,
+ "switch": list of strings or list of list of strings,
+ "option_key": string or list of strings,
+ "option_val": string or list of strings,
+ "inputs": list of strings, lists and/or tuples,
+ "outputs": list of strings}
+'''\end{lstlisting} & \begin{lstlisting}[language=Python]
+'''
+« Description of new_brainex_method. »
+
+Node Block:
+{"name": "new_brainex_method",
+ "config": "None",
+ "switch": [["anatomical_preproc", "brain_extraction", "run"],
+            ["anatomical_preproc", "run"]],
+ "option_key": ["anatomical_preproc", "brain_extraction", "using"],
+ "option_val": "new_brainex_method",
+ "inputs": ["desc-preproc_T1w"],
+ "outputs": ["space-T1w_desc-brain_mask"]}
+'''\end{lstlisting} \\
+    \hline
+  \end{tabular}
+\end{document}

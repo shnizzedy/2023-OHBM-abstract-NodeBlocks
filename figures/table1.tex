@@ -1,0 +1,23 @@
+\documentclass[varwidth=\maxdimen]{standalone}
+\usepackage[utf8]{inputenc}
+\begin{document}
+  \begin{tabular}[t]{ @{}|l|l|p{6in}| }
+    \multicolumn{3}{c}{Table 1} \\
+    \hline
+    Key & Type & Description \\
+    \hline
+    \texttt{config} & list or string & Indicates the nested keys in a C-PAC pipeline configuration should configure a NodeBlock built from this function. If \texttt{config} is set to \texttt{"None"}, then all other configuration-related entities must be specified from the root of the configuration. \\
+    \hline
+    \texttt{switch} & list or string & Indicates any keys that should evaluate to \texttt{True} for this \texttt{NodeBlock} to be active. A list of lists of strings indicates multiple switches that must all be \texttt{True} to run, and is currently only an option if \texttt{config} is set to \texttt{"None"}. \\
+    \hline
+    \texttt{option\_key} & list or string & Indicates the nested keys (starting at the nested key indicated by \texttt{config}) that should configure this \texttt{NodeBlock}. \\
+    \texttt{option\_value} & list or string & Indicates values for which this \texttt{NodeBlock} should be active. \\
+    \hline
+    \texttt{name} & string & Used in the graph and logging to identify the \texttt{NodeBlock} and its component nodes. \\
+    \hline
+    \texttt{inputs} & list of (strings or tuples of strings) & \texttt{ResourcePool} keys indicating files needed for the \texttt{NodeBlock}'s functionality. \\
+    \hline
+    \texttt{outputs} & list or dictionary & \texttt{ResourcePool} keys indicating files generated or updated by the \texttt{NodeBlock}, optionally including metadata for the outputs' respective sidecars. \\
+    \hline
+  \end{tabular}
+\end{document}
