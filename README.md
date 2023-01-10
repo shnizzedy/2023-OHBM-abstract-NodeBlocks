@@ -10,13 +10,21 @@ Jon Clucas*, Steve Giavasis*, Gregory Kiar, Michael P. Milham
 
 ## Primary
 
-Methods Development
+- Methods Development
 
 ## Secondary
 
-Workflows
+- Workflows
 
 # Keywords
+
+- Computational Neuroscience
+- Data analysis
+- Data Organization
+- Design and Analysis
+- Open-Source Code
+- Open-Source Software
+- Workflows
 
 # Introduction
 
@@ -36,7 +44,7 @@ A Node Block function is defined in the code by including at the end of a functi
 
 ![Figure 1](./figures/figure1.png)
 
-Each entity in such a docstring dictionary defines how a NodeBlock built from that function should interact with a pipeline configuration (“config”, “switch”, “option_key”, “option_val”) or with other NodeBlocks (“name”, “inputs”, “outputs”). A value can be the string “None” instead of one of the specified types, but each must be specified. Future versions may include new or changed entities.
+Each entity in such a docstring dictionary defines how a NodeBlock built from that function should interact with a pipeline configuration (“config”, “switch”, “option_key”, “option_val”) or with other NodeBlocks (“name”, “inputs”, “outputs”). A value can be the string “None” instead of one of the specified types, but each must be specified (see Table 1). Future versions may include new or changed entities.
 
 ![Table 1](./figures/table1.png)
 
