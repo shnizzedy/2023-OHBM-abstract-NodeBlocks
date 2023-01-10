@@ -8,9 +8,13 @@ Jon Clucas*, Steve Giavasis*, Gregory Kiar, Michael P. Milham
 
 # Categorical Terms
 
-Primary. 
+## Primary
 
-Secondary (3‒5).
+Methods Development
+
+## Secondary
+
+Workflows
 
 # Keywords
 
