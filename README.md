@@ -28,7 +28,7 @@ Jon Clucas*, Steve Giavasis*, Gregory Kiar, Michael P. Milham
 
 # Introduction
 
-Nipype [1] “provides a uniform interface to existing neuroimaging software and facilitates interaction between these packages within a single workflow.” [2] C-PAC leverages Nipype to build and run neuroimaging pipelines, abstracting the configuration to a few command-line instructions (provide `bids_dir` or `--data_config_file` to specify data; provide `--preconfig` or `--pipeline_file` to specify a pipeline) for simple (re)use once a pipeline is designed. C-PAC users don’t need to understand Nipype; they can just specify their configurations.
+Nipype [1] “provides a uniform interface to existing neuroimaging software and facilitates interaction between these packages within a single workflow” [2]. C-PAC leverages Nipype to build and run neuroimaging pipelines, abstracting the configuration to a few command-line instructions (provide `bids_dir` or `--data_config_file` to specify data; provide `--preconfig` or `--pipeline_file` to specify a pipeline) for simple (re)use once a pipeline is designed. C-PAC users don’t need to understand Nipype; they can just specify their configurations.
 
 Developers do need to understand Nipype in order to contribute to C-PAC. That necessary expertise has historically been a barrier to entry for new contributors. We developed C-PAC’s NodeBlock engine [3], to facilitate development, integration, and testing through modularity and abstraction, moving the C-PAC developer experience closer to the C-PAC user experience.
 
